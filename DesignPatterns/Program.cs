@@ -35,11 +35,7 @@ namespace DesignPatterns
             while (choose.ToUpper() != END);
                 
         }
-
-        
-
-        
-
+              
         static void SelectPattern(int number)
         {
             PatternSelector patternSelector = new PatternSelector(number);

@@ -84,6 +84,7 @@ namespace DesignPatterns
                 
         }
 
+        //Factory for specific executer
         private IPatternExecutor PatternExecutorFactory(int index)
         {
             IPatternExecutor _pattern = null;
