@@ -49,8 +49,14 @@
     <Compile Include="Creational\Builder\Shop.cs" />
     <Compile Include="Creational\Builder\Vehicle.cs" />
     <Compile Include="Creational\Builder\VehicleBuilderBase.cs" />
+    <Compile Include="Creational\Prototype\ColorPrototype.cs" />
+    <Compile Include="Creational\Prototype\PrototypeExecutor.cs" />
     <Compile Include="IPatternExecutor.cs" />
     <Compile Include="PatternSelector.cs" />
+    <Compile Include="PatternsType\Behevioral.cs" />
+    <Compile Include="PatternsType\CreationalType.cs" />
+    <Compile Include="PatternsType\PatternsTypeBase.cs" />
+    <Compile Include="PatternsType\StructuralType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
