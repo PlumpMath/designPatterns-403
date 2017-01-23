@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPatterns.Creational.Builder;
+
 
 namespace DesignPatterns
 {
@@ -18,14 +18,16 @@ namespace DesignPatterns
             do
             {
                 Console.WriteLine("Select design pattern to show");
-                Console.WriteLine("[1]. Builder pattern");
+                Console.WriteLine("[1]. Creational");
+                Console.WriteLine("[2]. Structural");
+                Console.WriteLine("[3]. Behavioral");
                 Console.WriteLine("[E]. Exit");
 
                 choose = Console.ReadLine();
 
                 if (Int32.TryParse(choose, out number))
                 {
-                    ExecuteBuilder(CreatePatternExecutor(number));
+                    SelectPattern(number);
                 }
                 else
                     Console.WriteLine("Incorect format");
@@ -34,24 +36,14 @@ namespace DesignPatterns
                 
         }
 
-        static void ExecuteBuilder(IPatternExecutor pattern )
-        {
-            if (pattern != null)
-                pattern.Execute();
-        }
+        
 
-        static IPatternExecutor CreatePatternExecutor(int index)
+        
+
+        static void SelectPattern(int number)
         {
-            IPatternExecutor _pattern = null;
-            switch (index)
-            {
-                case 1:
-                    _pattern = new BuilderExecutor();
-                    break;
-                default:
-                    break;
-            }
-            return _pattern;
+            PatternSelector patternSelector = new PatternSelector(number);
+            patternSelector.SelectPatterns();
         }
     }
 }

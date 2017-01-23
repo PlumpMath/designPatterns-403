@@ -50,6 +50,7 @@
     <Compile Include="Creational\Builder\Vehicle.cs" />
     <Compile Include="Creational\Builder\VehicleBuilderBase.cs" />
     <Compile Include="IPatternExecutor.cs" />
+    <Compile Include="PatternSelector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

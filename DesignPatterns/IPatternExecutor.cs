@@ -9,5 +9,6 @@ namespace DesignPatterns
     public interface IPatternExecutor
     {
         void Execute();
+        string Description();
     }
 }
