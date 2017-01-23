@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Creational
+namespace DesignPatterns
 {
-    class AbstractFactory
+    public interface IPatternExecutor
     {
+        void Execute();
     }
 }
