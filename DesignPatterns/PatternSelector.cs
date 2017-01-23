@@ -67,7 +67,7 @@ namespace DesignPatterns
 
             if (Int32.TryParse(choose, out _number))
             {
-                ExecuteBuilder(CreatePatternExecutor(_number));
+                ExecuteBuilder(PatternExecutorFactory(_number));
             }
             else
                 Console.WriteLine("Wrong format");
@@ -84,7 +84,7 @@ namespace DesignPatterns
                 
         }
 
-        private IPatternExecutor CreatePatternExecutor(int index)
+        private IPatternExecutor PatternExecutorFactory(int index)
         {
             IPatternExecutor _pattern = null;
             switch (index)
