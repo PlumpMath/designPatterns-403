@@ -49,6 +49,8 @@
     <Compile Include="Creational\Builder\Shop.cs" />
     <Compile Include="Creational\Builder\Vehicle.cs" />
     <Compile Include="Creational\Builder\VehicleBuilderBase.cs" />
+    <Compile Include="Creational\Prototype\Color.cs" />
+    <Compile Include="Creational\Prototype\ColorManager.cs" />
     <Compile Include="Creational\Prototype\ColorPrototype.cs" />
     <Compile Include="Creational\Prototype\PrototypeExecutor.cs" />
     <Compile Include="IPatternExecutor.cs" />
