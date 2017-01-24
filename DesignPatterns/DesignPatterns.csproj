@@ -67,6 +67,12 @@
     <Compile Include="Structural\Decorator\DecoratorExecutor.cs" />
     <Compile Include="Structural\Decorator\LibraryItemBase.cs" />
     <Compile Include="Structural\Decorator\Video.cs" />
+    <Compile Include="Structural\Facade\Bank.cs" />
+    <Compile Include="Structural\Facade\Credit.cs" />
+    <Compile Include="Structural\Facade\Customer.cs" />
+    <Compile Include="Structural\Facade\FacadeExecutor.cs" />
+    <Compile Include="Structural\Facade\Loan.cs" />
+    <Compile Include="Structural\Facade\MortgageFacade.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

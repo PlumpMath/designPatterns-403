@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Structural.Decorator;
+using DesignPatterns.Structural.Facade;
 using System;
 
 
@@ -9,6 +10,7 @@ namespace DesignPatterns.PatternsType
         protected override void DrawList()
         {
             Console.WriteLine("[1]. Decorator");
+            Console.WriteLine("[2]. Facade");
             base.DrawList();
         }
 
@@ -34,6 +36,9 @@ namespace DesignPatterns.PatternsType
             {
                 case 1:
                     _pattern = new DecoratorExecutor();
+                    break;
+                case 2:
+                    _pattern = new FacadeExecutor();
                     break;
                 default:
                     break;

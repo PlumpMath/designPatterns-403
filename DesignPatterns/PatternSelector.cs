@@ -1,6 +1,4 @@
-﻿using System;
-using DesignPatterns.Creational.Builder;
-using DesignPatterns.PatternsType;
+﻿using DesignPatterns.PatternsType;
 
 namespace DesignPatterns
 {
