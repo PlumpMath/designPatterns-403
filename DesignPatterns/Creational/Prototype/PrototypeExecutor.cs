@@ -10,7 +10,7 @@ namespace DesignPatterns.Creational.Prototype
     {
         public string Description()
         {
-            return string.Format("PROTOTYPE PATTERN{0}Specify the kind of objects to create using a prototypical {0}instance, and create new objects by copying this prototype.", Environment.NewLine);
+            return string.Format("PROTOTYPE PATTERN{0}Specify the kind of objects to create using a prototypical {0}instance, and create new objects by copying this prototype.{0}", Environment.NewLine);
         }
 
         public void Execute()
@@ -25,8 +25,13 @@ namespace DesignPatterns.Creational.Prototype
 
             Color c1 = colorManager["red"].Clone() as Color;
 
-            Console.ReadLine();
+            Console.WriteLine();
 
+        }
+
+        public void Message(string message)
+        {
+            throw new NotImplementedException();
         }
     }
 }

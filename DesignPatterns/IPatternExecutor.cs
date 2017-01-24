@@ -10,5 +10,6 @@ namespace DesignPatterns
     {
         void Execute();
         string Description();
+        void Message(string message);
     }
 }

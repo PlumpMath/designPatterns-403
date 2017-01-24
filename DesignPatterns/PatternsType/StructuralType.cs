@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.Structural.Decorator;
+using System;
 
 
 namespace DesignPatterns.PatternsType
@@ -7,17 +8,37 @@ namespace DesignPatterns.PatternsType
     {
         protected override void DrawList()
         {
+            Console.WriteLine("[1]. Decorator");
             base.DrawList();
         }
 
         public override void Execute()
         {
-            throw new NotImplementedException();
+            ClearConsole();
+
+            do
+            {
+                DrawList();
+                Choose = Console.ReadLine();
+                TryExecutePattern(Choose);
+            }
+            while (Choose.ToUpper() != BackChar);
+
+            ClearConsole();
         }
 
         protected override IPatternExecutor PatternExecutorFactory(int index)
         {
-            throw new NotImplementedException();
+            IPatternExecutor _pattern = null;
+            switch (index)
+            {
+                case 1:
+                    _pattern = new DecoratorExecutor();
+                    break;
+                default:
+                    break;
+            }
+            return _pattern;
         }
     }
 }
