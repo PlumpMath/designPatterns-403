@@ -3,7 +3,7 @@ using DesignPatterns.Structural.Facade;
 
 namespace DesignPatterns.Structural.PatternsExecutor
 {
-    public class FacadeExecutor : IPatternExecutor
+    public class Facade : IPatternExecutor
     {
         public string Description()
         {

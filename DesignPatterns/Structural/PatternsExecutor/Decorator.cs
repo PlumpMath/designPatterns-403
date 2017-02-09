@@ -3,7 +3,7 @@ using DesignPatterns.Structural.Decorator;
 
 namespace DesignPatterns.Structural.PatternsExecutor
 {
-    public class DecoratorExecutor : IPatternExecutor
+    public class Decorator : IPatternExecutor
     {
         public string Description()
         {

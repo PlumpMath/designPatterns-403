@@ -37,13 +37,13 @@ namespace DesignPatterns.PatternsType
             Console.WriteLine("[B]. Back");
         }
 
-        protected void TryExecutePattern(string choose)
+        protected void TryExecutePattern(string choose, string assembly)
         {
             int _number;
 
             if (Int32.TryParse(choose, out _number))
             {
-                ExecuteBuilder(PatternExecutorFactory(_number));
+                ExecuteBuilder(PatternExecutorFactory(_number, assembly));
             }
             else
                 Console.WriteLine("Wrong format");
@@ -61,7 +61,19 @@ namespace DesignPatterns.PatternsType
         }
 
         //Factory for specific executer
-        protected abstract IPatternExecutor PatternExecutorFactory(int index);
+        protected virtual IPatternExecutor PatternExecutorFactory(int index, string assembly)
+        {
+            IPatternExecutor _pattern = null;
+            if (IdsAndNamesOfClasses.Count >= index)
+            {
+                Type type = Type.GetType(string.Format("{0}.{1}", assembly, IdsAndNamesOfClasses[index]));
+                object t = Activator.CreateInstance(type);
+                if (t != null)
+                    _pattern = (IPatternExecutor)t;
+            }
+            return _pattern;
+        }
+
         public abstract void Execute();
 
 

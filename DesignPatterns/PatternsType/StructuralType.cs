@@ -7,6 +7,8 @@ namespace DesignPatterns.PatternsType
 {
     public class StructuralType : PatternsTypeBase
     {
+        private const string ASSEMBLY_NAME = "DesignPatterns.Structural.PatternsExecutor";
+
         protected override void DrawList()
         {
             MenuBuilder menu = new MenuBuilder();
@@ -27,29 +29,11 @@ namespace DesignPatterns.PatternsType
             {
                 DrawList();
                 Choose = Console.ReadLine();
-                TryExecutePattern(Choose);
+                TryExecutePattern(Choose, ASSEMBLY_NAME);
             }
             while (Choose.ToUpper() != BackChar);
 
             ClearConsole();
-        }
-
-        protected override IPatternExecutor PatternExecutorFactory(int index)
-        {
-            IPatternExecutor _pattern = null;
-
-            switch (index)
-            {
-                case 1:
-                    _pattern = new DecoratorExecutor();
-                    break;
-                case 2:
-                    _pattern = new FacadeExecutor();
-                    break;
-                default:
-                    break;
-            }
-            return _pattern;
         }
     }
 }

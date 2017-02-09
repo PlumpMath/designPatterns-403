@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.PatternsExecutors
 {
-    public class AbstractFactoryExecutor : IPatternExecutor
+    public class AbstractFactory : IPatternExecutor
     {
         public string Description()
         {

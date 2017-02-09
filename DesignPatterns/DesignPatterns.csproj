@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creational\PatternsExecutors\AbstractFactoryExecutor.cs" />
-    <Compile Include="Creational\PatternsExecutors\BuilderExecutor.cs" />
+    <Compile Include="Creational\PatternsExecutors\AbstractFactory.cs" />
+    <Compile Include="Creational\PatternsExecutors\Builder.cs" />
     <Compile Include="Creational\Builder\CarBuilder.cs" />
     <Compile Include="Creational\Builder\ScooterBuilder.cs" />
     <Compile Include="Creational\Builder\Shop.cs" />
@@ -53,7 +53,7 @@
     <Compile Include="Creational\Prototype\Color.cs" />
     <Compile Include="Creational\Prototype\ColorManager.cs" />
     <Compile Include="Creational\Prototype\ColorPrototype.cs" />
-    <Compile Include="Creational\PatternsExecutors\PrototypeExecutor.cs" />
+    <Compile Include="Creational\PatternsExecutors\Prototype.cs" />
     <Compile Include="Helpers\MenuBuilder.cs" />
     <Compile Include="IPatternExecutor.cs" />
     <Compile Include="PatternSelector.cs" />
@@ -67,13 +67,13 @@
     <Compile Include="Structural\Decorator\Book.cs" />
     <Compile Include="Structural\Decorator\Borrowable.cs" />
     <Compile Include="Structural\Decorator\DecoratorBase.cs" />
-    <Compile Include="Structural\PatternsExecutor\DecoratorExecutor.cs" />
+    <Compile Include="Structural\PatternsExecutor\Decorator.cs" />
     <Compile Include="Structural\Decorator\LibraryItemBase.cs" />
     <Compile Include="Structural\Decorator\Video.cs" />
     <Compile Include="Structural\Facade\Bank.cs" />
     <Compile Include="Structural\Facade\Credit.cs" />
     <Compile Include="Structural\Facade\Customer.cs" />
-    <Compile Include="Structural\PatternsExecutor\FacadeExecutor.cs" />
+    <Compile Include="Structural\PatternsExecutor\Facade.cs" />
     <Compile Include="Structural\Facade\Loan.cs" />
     <Compile Include="Structural\Facade\MortgageFacade.cs" />
   </ItemGroup>

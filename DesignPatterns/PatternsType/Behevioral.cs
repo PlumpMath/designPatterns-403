@@ -9,13 +9,15 @@ namespace DesignPatterns.PatternsType
 {
     public class Behevioral : PatternsTypeBase
     {
+        private const string ASSEMBLY_NAME = "DesignPatterns.Behavioral.PatternsExecutor";
+
         protected override void DrawList()
         {
             MenuBuilder menu = new MenuBuilder();
 
-            var listOfMenu = menu.BuildMenu<IPatternExecutor>(PatternsType.PatternTypeEnum.Behavioral);
+            IdsAndNamesOfClasses = menu.BuildMenu<IPatternExecutor>(PatternsType.PatternTypeEnum.Behavioral);
 
-            foreach (var item in listOfMenu)
+            foreach (var item in IdsAndNamesOfClasses)
                 Console.WriteLine("[{0}]. {1}.", item.Key, item.Value);
 
             base.DrawList();
@@ -23,12 +25,18 @@ namespace DesignPatterns.PatternsType
 
         public override void Execute()
         {
-            
+            ClearConsole();
+
+            do
+            {
+                DrawList();
+                Choose = Console.ReadLine();
+                TryExecutePattern(Choose, ASSEMBLY_NAME);
+            }
+            while (Choose.ToUpper() != BackChar);
+
+            ClearConsole();
         }
 
-        protected override IPatternExecutor PatternExecutorFactory(int index)
-        {
-            return null;
-        }
     }
 }

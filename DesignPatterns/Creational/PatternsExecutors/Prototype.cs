@@ -7,7 +7,7 @@ using DesignPatterns.Creational.Prototype;
 
 namespace DesignPatterns.Creational.PatternsExecutors
 {
-    public class PrototypeExecutor : IPatternExecutor
+    public class Prototype : IPatternExecutor
     {
         public string Description()
         {
