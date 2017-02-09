@@ -43,6 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\AbstractFactory\AfricaFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\AmericaFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\AnimalWorld.cs" />
+    <Compile Include="Creational\AbstractFactory\Bison.cs" />
+    <Compile Include="Creational\AbstractFactory\Carnivore.cs" />
+    <Compile Include="Creational\AbstractFactory\ContinentFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Herbivore.cs" />
+    <Compile Include="Creational\AbstractFactory\Lion.cs" />
+    <Compile Include="Creational\AbstractFactory\Wildbeest.cs" />
+    <Compile Include="Creational\AbstractFactory\Wolf.cs" />
     <Compile Include="Creational\PatternsExecutors\AbstractFactory.cs" />
     <Compile Include="Creational\PatternsExecutors\Builder.cs" />
     <Compile Include="Creational\Builder\CarBuilder.cs" />
@@ -82,7 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\PatternsExecutor\" />
-    <Folder Include="Creational\AbstractFactory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

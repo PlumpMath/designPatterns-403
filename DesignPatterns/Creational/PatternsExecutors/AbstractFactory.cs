@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPatterns.Creational.AbstractFactory;
 
 namespace DesignPatterns.Creational.PatternsExecutors
 {
@@ -15,7 +16,13 @@ namespace DesignPatterns.Creational.PatternsExecutors
 
         public void Execute()
         {
-            
+            ContinentFactory afrika = new AfricaFactory();
+            AnimalWorld world = new AnimalWorld(afrika);
+            world.RunFoodChain();
+
+            ContinentFactory america = new AmericaFactory();
+            world = new AnimalWorld(america);
+            world.RunFoodChain();
         }
 
         public void Message(string message)
