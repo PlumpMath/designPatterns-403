@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +11,24 @@ namespace DesignPatterns.PatternsType
     {
         protected override void DrawList()
         {
+            MenuBuilder menu = new MenuBuilder();
+
+            var listOfMenu = menu.BuildMenu<IPatternExecutor>(PatternsType.PatternTypeEnum.Behavioral);
+
+            foreach (var item in listOfMenu)
+                Console.WriteLine("[{0}]. {1}.", item.Key, item.Value);
+
             base.DrawList();
         }
 
         public override void Execute()
         {
-            throw new NotImplementedException();
+            
         }
 
         protected override IPatternExecutor PatternExecutorFactory(int index)
         {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }

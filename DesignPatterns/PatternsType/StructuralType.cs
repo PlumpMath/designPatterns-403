@@ -1,6 +1,7 @@
-﻿using DesignPatterns.Structural.PatternsExecutor;
+﻿using DesignPatterns.Helpers;
+using DesignPatterns.Structural.PatternsExecutor;
 using System;
-
+using System.Reflection;
 
 namespace DesignPatterns.PatternsType
 {
@@ -8,8 +9,13 @@ namespace DesignPatterns.PatternsType
     {
         protected override void DrawList()
         {
-            Console.WriteLine("[1]. Decorator");
-            Console.WriteLine("[2]. Facade");
+            MenuBuilder menu = new MenuBuilder();
+
+            IdsAndNamesOfClasses = menu.BuildMenu<IPatternExecutor>(PatternsType.PatternTypeEnum.Structural);
+
+            foreach (var item in IdsAndNamesOfClasses)
+                Console.WriteLine("[{0}]. {1}.", item.Key, item.Value);
+
             base.DrawList();
         }
 
@@ -31,6 +37,7 @@ namespace DesignPatterns.PatternsType
         protected override IPatternExecutor PatternExecutorFactory(int index)
         {
             IPatternExecutor _pattern = null;
+
             switch (index)
             {
                 case 1:

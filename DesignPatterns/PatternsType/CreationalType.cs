@@ -1,6 +1,6 @@
 ﻿using System;
 using DesignPatterns.Creational.PatternsExecutors;
-
+using DesignPatterns.Helpers;
 
 namespace DesignPatterns.PatternsType
 {
@@ -8,9 +8,13 @@ namespace DesignPatterns.PatternsType
     {
         protected override void DrawList()
         {
-            Console.WriteLine("[1]. Builder");
-            Console.WriteLine("[2]. Prototype");
-            Console.WriteLine("[3]. Abstarct factory");
+            MenuBuilder menu = new MenuBuilder();
+
+            var listOfMenu = menu.BuildMenu<IPatternExecutor>(PatternsType.PatternTypeEnum.Creational);
+
+            foreach (var item in listOfMenu)
+                Console.WriteLine("[{0}]. {1}.", item.Key, item.Value);
+
             base.DrawList();
         }
 

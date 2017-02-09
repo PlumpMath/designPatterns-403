@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DesignPatterns.PatternsType
 {
@@ -7,6 +8,13 @@ namespace DesignPatterns.PatternsType
 
         private const string BACK = "B";
         private string _choose;
+        private IDictionary<int, string> _idAndNamesOfClasses;
+
+        public IDictionary<int, string> IdsAndNamesOfClasses
+        {
+            get { return _idAndNamesOfClasses;}
+            set { _idAndNamesOfClasses = value;}
+        }
 
         public string Choose
         {

@@ -54,11 +54,13 @@
     <Compile Include="Creational\Prototype\ColorManager.cs" />
     <Compile Include="Creational\Prototype\ColorPrototype.cs" />
     <Compile Include="Creational\PatternsExecutors\PrototypeExecutor.cs" />
+    <Compile Include="Helpers\MenuBuilder.cs" />
     <Compile Include="IPatternExecutor.cs" />
     <Compile Include="PatternSelector.cs" />
     <Compile Include="PatternsType\Behevioral.cs" />
     <Compile Include="PatternsType\CreationalType.cs" />
     <Compile Include="PatternsType\PatternsTypeBase.cs" />
+    <Compile Include="PatternsType\PatternTypeEnum.cs" />
     <Compile Include="PatternsType\StructuralType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
