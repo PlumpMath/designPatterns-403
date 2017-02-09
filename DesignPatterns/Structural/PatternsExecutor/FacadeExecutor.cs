@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DesignPatterns.Structural.Facade;
 
-namespace DesignPatterns.Structural.Facade
+namespace DesignPatterns.Structural.PatternsExecutor
 {
     public class FacadeExecutor : IPatternExecutor
     {

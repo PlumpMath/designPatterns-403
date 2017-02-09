@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creational\Builder\BuilderExecutor.cs" />
+    <Compile Include="Creational\PatternsExecutors\AbstractFactoryExecutor.cs" />
+    <Compile Include="Creational\PatternsExecutors\BuilderExecutor.cs" />
     <Compile Include="Creational\Builder\CarBuilder.cs" />
     <Compile Include="Creational\Builder\ScooterBuilder.cs" />
     <Compile Include="Creational\Builder\Shop.cs" />
@@ -52,7 +53,7 @@
     <Compile Include="Creational\Prototype\Color.cs" />
     <Compile Include="Creational\Prototype\ColorManager.cs" />
     <Compile Include="Creational\Prototype\ColorPrototype.cs" />
-    <Compile Include="Creational\Prototype\PrototypeExecutor.cs" />
+    <Compile Include="Creational\PatternsExecutors\PrototypeExecutor.cs" />
     <Compile Include="IPatternExecutor.cs" />
     <Compile Include="PatternSelector.cs" />
     <Compile Include="PatternsType\Behevioral.cs" />
@@ -64,13 +65,13 @@
     <Compile Include="Structural\Decorator\Book.cs" />
     <Compile Include="Structural\Decorator\Borrowable.cs" />
     <Compile Include="Structural\Decorator\DecoratorBase.cs" />
-    <Compile Include="Structural\Decorator\DecoratorExecutor.cs" />
+    <Compile Include="Structural\PatternsExecutor\DecoratorExecutor.cs" />
     <Compile Include="Structural\Decorator\LibraryItemBase.cs" />
     <Compile Include="Structural\Decorator\Video.cs" />
     <Compile Include="Structural\Facade\Bank.cs" />
     <Compile Include="Structural\Facade\Credit.cs" />
     <Compile Include="Structural\Facade\Customer.cs" />
-    <Compile Include="Structural\Facade\FacadeExecutor.cs" />
+    <Compile Include="Structural\PatternsExecutor\FacadeExecutor.cs" />
     <Compile Include="Structural\Facade\Loan.cs" />
     <Compile Include="Structural\Facade\MortgageFacade.cs" />
   </ItemGroup>
@@ -78,7 +79,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral\" />
+    <Folder Include="Behavioral\PatternsExecutor\" />
+    <Folder Include="Creational\AbstractFactory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

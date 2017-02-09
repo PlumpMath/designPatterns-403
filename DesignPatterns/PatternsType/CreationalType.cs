@@ -1,6 +1,5 @@
-﻿using DesignPatterns.Creational.Builder;
-using DesignPatterns.Creational.Prototype;
-using System;
+﻿using System;
+using DesignPatterns.Creational.PatternsExecutors;
 
 
 namespace DesignPatterns.PatternsType
@@ -11,6 +10,7 @@ namespace DesignPatterns.PatternsType
         {
             Console.WriteLine("[1]. Builder");
             Console.WriteLine("[2]. Prototype");
+            Console.WriteLine("[3]. Abstarct factory");
             base.DrawList();
         }
 
@@ -39,6 +39,9 @@ namespace DesignPatterns.PatternsType
                     break;
                 case 2:
                     _pattern = new PrototypeExecutor();
+                    break;
+                case 3:
+                    _pattern = new AbstractFactoryExecutor();
                     break;
                 default:
                     break;

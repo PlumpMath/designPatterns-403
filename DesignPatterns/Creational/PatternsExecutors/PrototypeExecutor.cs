@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPatterns.Creational.Prototype;
 
-namespace DesignPatterns.Creational.Prototype
+namespace DesignPatterns.Creational.PatternsExecutors
 {
     public class PrototypeExecutor : IPatternExecutor
     {

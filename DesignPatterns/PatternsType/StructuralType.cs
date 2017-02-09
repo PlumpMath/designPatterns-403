@@ -1,5 +1,4 @@
-﻿using DesignPatterns.Structural.Decorator;
-using DesignPatterns.Structural.Facade;
+﻿using DesignPatterns.Structural.PatternsExecutor;
 using System;
 
 
