@@ -100,6 +100,10 @@
     <Compile Include="Structural\PatternsExecutor\Facade.cs" />
     <Compile Include="Structural\Facade\Loan.cs" />
     <Compile Include="Structural\Facade\MortgageFacade.cs" />
+    <Compile Include="Structural\PatternsExecutor\Proxy.cs" />
+    <Compile Include="Structural\Proxy\IMath.cs" />
+    <Compile Include="Structural\Proxy\Math.cs" />
+    <Compile Include="Structural\Proxy\MathProxy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
