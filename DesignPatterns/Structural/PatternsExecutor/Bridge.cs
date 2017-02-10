@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DesignPatterns.Structural.Bridge;
 
 namespace DesignPatterns.Structural.PatternsExecutor
 {
@@ -15,7 +12,19 @@ namespace DesignPatterns.Structural.PatternsExecutor
 
         public void Execute()
         {
-            
+            MySuperSmartTV tv = new MySuperSmartTV();
+
+            tv.VideoSource = new IPTvService();
+            tv.ShowTvGuide();
+            tv.PlayTV();
+
+            tv.VideoSource = new LocalCabelTv();
+            tv.ShowTvGuide();
+            tv.PlayTV();
+
+            tv.VideoSource = new LocalDishTv();
+            tv.PlayTV();
+            tv.ShowTvGuide();
         }
     }
 }

@@ -92,6 +92,11 @@
     <Compile Include="Structural\Adapter\ChemicalDataBank.cs" />
     <Compile Include="Structural\Adapter\Compound.cs" />
     <Compile Include="Structural\Adapter\RichCompound.cs" />
+    <Compile Include="Structural\Bridge\IPTvService.cs" />
+    <Compile Include="Structural\Bridge\IVideoSource.cs" />
+    <Compile Include="Structural\Bridge\LocalCabelTv.cs" />
+    <Compile Include="Structural\Bridge\LocalDishTv.cs" />
+    <Compile Include="Structural\Bridge\MySuperSmartTV.cs" />
     <Compile Include="Structural\Decorator\Book.cs" />
     <Compile Include="Structural\Decorator\Borrowable.cs" />
     <Compile Include="Structural\Decorator\DecoratorBase.cs" />
@@ -116,7 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\PatternsExecutor\" />
-    <Folder Include="Structural\Bridge\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
