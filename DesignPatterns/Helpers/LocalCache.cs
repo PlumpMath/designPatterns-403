@@ -38,9 +38,9 @@ namespace DesignPatterns.Helpers
             cache[name] = item;
         }
 
-        public T Get<T>(string name)
+        public T Get<T>(string name) where T : class
         {
-            return (T)cache[name];
+            return cache[name] as T;
         }
     }
 }
