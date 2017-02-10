@@ -13,6 +13,7 @@ namespace DesignPatterns.PatternsType
         public static readonly PatternTypeEnum Behavioral = new PatternTypeEnum("Behavioral");
         public static readonly PatternTypeEnum Creational = new PatternTypeEnum("Creational");
         public static readonly PatternTypeEnum Structural = new PatternTypeEnum("Structural");
+        public static readonly PatternTypeEnum Others = new PatternTypeEnum("Others");
 
         private PatternTypeEnum(string name)
         {

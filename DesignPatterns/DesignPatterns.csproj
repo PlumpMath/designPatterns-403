@@ -83,6 +83,7 @@
     <Compile Include="PatternSelector.cs" />
     <Compile Include="PatternsType\Behevioral.cs" />
     <Compile Include="PatternsType\Creational.cs" />
+    <Compile Include="PatternsType\Others.cs" />
     <Compile Include="PatternsType\PatternsTypeBase.cs" />
     <Compile Include="PatternsType\PatternTypeEnum.cs" />
     <Compile Include="PatternsType\Structural.cs" />
