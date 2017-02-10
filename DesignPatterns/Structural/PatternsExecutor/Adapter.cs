@@ -7,7 +7,8 @@ namespace DesignPatterns.Structural.PatternsExecutor
     {
         public string Description()
         {
-            return string.Format("Convert the interface of a class into another interface clients expect. {0}Adapter lets classes work together that couldn't otherwise {0}because of incompatible interfaces. ", Environment.NewLine);
+            return string.Format("Convert the interface of a class into another interface clients expect. {0} " + 
+                "Adapter lets classes work together that couldn't otherwise {0}because of incompatible interfaces. ", Environment.NewLine);
         }
 
         public void Execute()
@@ -15,13 +16,13 @@ namespace DesignPatterns.Structural.PatternsExecutor
             Compound unknown = new Compound("Unknown");
             unknown.Display();
 
-            Compound water = new RichCompound("Water");
+            Compound water = new RichCompoundAdapter("Water");
             water.Display();
 
-            Compound benzene = new RichCompound("Benzene");
+            Compound benzene = new RichCompoundAdapter("Benzene");
             benzene.Display();
 
-            Compound ethanol = new RichCompound("Ethanol");
+            Compound ethanol = new RichCompoundAdapter("Ethanol");
             ethanol.Display();
         }
 

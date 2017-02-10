@@ -95,6 +95,7 @@
     <Compile Include="Structural\Decorator\Borrowable.cs" />
     <Compile Include="Structural\Decorator\DecoratorBase.cs" />
     <Compile Include="Structural\PatternsExecutor\Adapter.cs" />
+    <Compile Include="Structural\PatternsExecutor\Bridge.cs" />
     <Compile Include="Structural\PatternsExecutor\Decorator.cs" />
     <Compile Include="Structural\Decorator\LibraryItemBase.cs" />
     <Compile Include="Structural\Decorator\Video.cs" />
@@ -114,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\PatternsExecutor\" />
+    <Folder Include="Structural\Bridge\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

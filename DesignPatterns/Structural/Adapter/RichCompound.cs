@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace DesignPatterns.Structural.Adapter
 {
     //Adapter
-    public class RichCompound : Compound
+    public class RichCompoundAdapter : Compound
     {
         private ChemicalDataBank _bank;
 
-        public RichCompound(string name)
+        public RichCompoundAdapter(string name)
             :base(name)
         {
         }
