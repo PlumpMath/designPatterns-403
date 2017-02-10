@@ -23,7 +23,7 @@ namespace DesignPatterns
             if (t != null)
                 patternsType = (PatternsTypeBase)t;
 
-            patternsType.Execute();
+            patternsType?.Execute();
         }
 
     }
