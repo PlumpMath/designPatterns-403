@@ -77,6 +77,7 @@
     <Compile Include="Creational\Prototype\ColorPrototype.cs" />
     <Compile Include="Creational\PatternsExecutors\Prototype.cs" />
     <Compile Include="Creational\Singleton\LoadBalancer.cs" />
+    <Compile Include="Helpers\LocalCache.cs" />
     <Compile Include="Helpers\MenuBuilder.cs" />
     <Compile Include="IPatternExecutor.cs" />
     <Compile Include="PatternSelector.cs" />

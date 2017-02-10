@@ -1,9 +1,7 @@
 ﻿using DesignPatterns.Helpers;
-using DesignPatterns.Structural.PatternsExecutor;
 using System;
 using System.Collections.Generic;
-using System.Reflection;
-using System.Runtime.Caching;
+
 
 namespace DesignPatterns.PatternsType
 {
@@ -15,8 +13,7 @@ namespace DesignPatterns.PatternsType
         {
             MenuBuilder menu = new MenuBuilder();
 
-            ObjectCache cache = MemoryCache.Default;
-            IDictionary<int, string> menuCache = cache[ASSEMBLY_NAME] as IDictionary<int, string>;
+            IDictionary<int, string> menuCache = LocalCache.Instance.Get<IDictionary<int, string>>(ASSEMBLY_NAME);
 
             if (menuCache != null)
             {
@@ -25,9 +22,8 @@ namespace DesignPatterns.PatternsType
             else
             {
                 IdsAndNamesOfClasses = menu.BuildMenu<IPatternExecutor>(PatternsType.PatternTypeEnum.Structural);
-                cache[ASSEMBLY_NAME] = IdsAndNamesOfClasses;
+                LocalCache.Instance.Add<IDictionary<int, string>>(IdsAndNamesOfClasses, ASSEMBLY_NAME);
             }
-
 
             foreach (var item in IdsAndNamesOfClasses)
                 Console.WriteLine("[{0}]. {1}.", item.Key, item.Value);
