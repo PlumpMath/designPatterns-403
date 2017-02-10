@@ -82,10 +82,10 @@
     <Compile Include="IPatternExecutor.cs" />
     <Compile Include="PatternSelector.cs" />
     <Compile Include="PatternsType\Behevioral.cs" />
-    <Compile Include="PatternsType\CreationalType.cs" />
+    <Compile Include="PatternsType\Creational.cs" />
     <Compile Include="PatternsType\PatternsTypeBase.cs" />
     <Compile Include="PatternsType\PatternTypeEnum.cs" />
-    <Compile Include="PatternsType\StructuralType.cs" />
+    <Compile Include="PatternsType\Structural.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structural\Decorator\Book.cs" />

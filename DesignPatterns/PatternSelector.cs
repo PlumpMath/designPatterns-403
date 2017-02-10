@@ -1,36 +1,29 @@
 ﻿using DesignPatterns.PatternsType;
+using System;
 
 namespace DesignPatterns
 {
     public class PatternSelector
     {
-        private int _patternIndex;       
+        private string _className;
+        private string _assemblyName;   
 
-        public PatternSelector (int index)
+        public PatternSelector (string className, string assemblyName)
         {
-            _patternIndex = index;
+            _className = className;
+            _assemblyName = assemblyName;
         }
 
         public void SelectPatterns()
         {
             PatternsTypeBase patternsType = null;
+            Type type = Type.GetType(string.Format("{0}.{1}", _assemblyName, _className));
+            object t = Activator.CreateInstance(type);
 
-            switch (_patternIndex)
-            {
-                case 1:
-                    patternsType = new CreationalType();
-                    break;
-                case 2:
-                    patternsType = new StructuralType();
-                    break;
-                case 3:
-                    patternsType = new Behevioral();
-                    break;
-                default:
-                    break;
-            }
-            if (patternsType != null)
-                patternsType.Execute();
+            if (t != null)
+                patternsType = (PatternsTypeBase)t;
+
+            patternsType.Execute();
         }
 
     }

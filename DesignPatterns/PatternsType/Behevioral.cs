@@ -15,7 +15,6 @@ namespace DesignPatterns.PatternsType
         protected override void DrawList()
         {
             MenuBuilder menu = new MenuBuilder();
-
             IDictionary<int, string> menuCache = LocalCache.Instance.Get<IDictionary<int, string>>(ASSEMBLY_NAME);
 
             if (menuCache != null)

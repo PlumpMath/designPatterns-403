@@ -1,18 +1,18 @@
-﻿using DesignPatterns.Helpers;
-using System;
+﻿using System;
+using DesignPatterns.Creational.PatternsExecutors;
+using DesignPatterns.Helpers;
+using System.Runtime.Caching;
 using System.Collections.Generic;
-
 
 namespace DesignPatterns.PatternsType
 {
-    public class StructuralType : PatternsTypeBase
+    public class Creational : PatternsTypeBase
     {
-        private const string ASSEMBLY_NAME = "DesignPatterns.Structural.PatternsExecutor";
+        private const string ASSEMBLY_NAME = "DesignPatterns.Creational.PatternsExecutors";
 
         protected override void DrawList()
         {
             MenuBuilder menu = new MenuBuilder();
-
             IDictionary<int, string> menuCache = LocalCache.Instance.Get<IDictionary<int, string>>(ASSEMBLY_NAME);
 
             if (menuCache != null)
@@ -21,7 +21,7 @@ namespace DesignPatterns.PatternsType
             }
             else
             {
-                IdsAndNamesOfClasses = menu.BuildMenu<IPatternExecutor>(PatternsType.PatternTypeEnum.Structural);
+                IdsAndNamesOfClasses = menu.BuildMenu<IPatternExecutor>(PatternsType.PatternTypeEnum.Creational);
                 LocalCache.Instance.Add<IDictionary<int, string>>(IdsAndNamesOfClasses, ASSEMBLY_NAME);
             }
 
