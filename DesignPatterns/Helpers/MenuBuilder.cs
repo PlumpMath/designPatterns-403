@@ -8,9 +8,7 @@ namespace DesignPatterns.Helpers
 {
     public class MenuBuilder
     {
-        
-
-
+               
         public IDictionary<int, string> BuildMenu<T>()
         {
             IDictionary<int, string> idsAndNames = new Dictionary<int, string>();
