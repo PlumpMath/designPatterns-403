@@ -1,5 +1,6 @@
 ﻿using System;
 using DesignPatterns.Structural.Decorator;
+using DesignPatterns.PatternsType;
 
 namespace DesignPatterns.Structural.PatternsExecutor
 {

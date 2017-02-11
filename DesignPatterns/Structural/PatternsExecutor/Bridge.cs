@@ -1,5 +1,6 @@
 ﻿using System;
 using DesignPatterns.Structural.Bridge;
+using DesignPatterns.PatternsType;
 
 namespace DesignPatterns.Structural.PatternsExecutor
 {

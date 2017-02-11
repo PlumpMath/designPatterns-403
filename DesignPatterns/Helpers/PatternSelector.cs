@@ -1,7 +1,7 @@
 ﻿using DesignPatterns.PatternsType;
 using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.Helpers
 {
     public class PatternSelector
     {

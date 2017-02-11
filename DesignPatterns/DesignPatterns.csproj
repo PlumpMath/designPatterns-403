@@ -79,8 +79,8 @@
     <Compile Include="Creational\Singleton\LoadBalancer.cs" />
     <Compile Include="Helpers\LocalCache.cs" />
     <Compile Include="Helpers\MenuBuilder.cs" />
-    <Compile Include="IPatternExecutor.cs" />
-    <Compile Include="PatternSelector.cs" />
+    <Compile Include="PatternsType\IPatternExecutor.cs" />
+    <Compile Include="Helpers\PatternSelector.cs" />
     <Compile Include="PatternsType\Behevioral.cs" />
     <Compile Include="PatternsType\Creational.cs" />
     <Compile Include="PatternsType\Others.cs" />
