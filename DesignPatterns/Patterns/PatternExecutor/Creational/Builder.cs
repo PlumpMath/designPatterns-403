@@ -1,8 +1,8 @@
 ﻿using System;
-using DesignPatterns.PatternsType;
 using DesignPatterns.Creational.Builder;
+using DesignPatterns.Common.Base;
 
-namespace DesignPatterns.Creational.PatternsExecutors
+namespace DesignPatterns.Patterns.PatternExecutor.Creational
 {
     public class Builder : IPatternExecutor
     {

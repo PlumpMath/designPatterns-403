@@ -1,7 +1,8 @@
-﻿using System;
+﻿using DesignPatterns.Patterns.PatternsType;
+using System;
 using System.Collections.Generic;
 
-namespace DesignPatterns.PatternsType
+namespace DesignPatterns.Common.Base
 {
     public abstract class PatternsTypeBase
     {

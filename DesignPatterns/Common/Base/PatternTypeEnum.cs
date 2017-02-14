@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.PatternsType
+namespace DesignPatterns.Common.Base
 {
     public sealed class PatternTypeEnum
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using DesignPatterns.Structural.Bridge;
-using DesignPatterns.PatternsType;
+using DesignPatterns.Common.Base;
 
-namespace DesignPatterns.Structural.PatternsExecutor
+namespace DesignPatterns.Patterns.PatternExecutor.Structural
 {
     public class Bridge : IPatternExecutor
     {

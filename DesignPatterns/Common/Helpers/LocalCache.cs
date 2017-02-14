@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Caching;
 
-namespace DesignPatterns.Helpers
+namespace DesignPatterns.Common.Helpers
 {
     public class LocalCache
     {
