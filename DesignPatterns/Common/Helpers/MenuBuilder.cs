@@ -42,7 +42,7 @@ namespace DesignPatterns.Common.Helpers
                 if(c.IsClass)
                 {
                     var typeName = c.Namespace.Split('.');
-                    if (typeName[typeName.Length - 2] == patternType.ToString())
+                    if (typeName[typeName.Length - 1] == patternType.ToString())
                     {
                         idsAndNames.Add(counter, c.Name);
                         counter++;

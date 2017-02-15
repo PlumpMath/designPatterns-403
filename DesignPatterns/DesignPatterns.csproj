@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\Command\AddCommand.cs" />
+    <Compile Include="Behavioral\Command\Calculator.cs" />
+    <Compile Include="Behavioral\Command\CommandBase.cs" />
+    <Compile Include="Behavioral\Command\IReciever.cs" />
+    <Compile Include="Behavioral\Command\Multiply.cs" />
+    <Compile Include="Behavioral\Command\SubstractCommand.cs" />
     <Compile Include="Patterns\PatternExecutor\Behevioral\Command.cs" />
     <Compile Include="Creational\AbstractFactory\AfricaFactory.cs" />
     <Compile Include="Creational\AbstractFactory\AmericaFactory.cs" />
@@ -122,7 +128,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral\" />
     <Folder Include="Structural\Composite\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

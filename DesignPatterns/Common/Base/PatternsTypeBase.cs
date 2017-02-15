@@ -58,7 +58,6 @@ namespace DesignPatterns.Common.Base
                 pattern.Execute();
                 Console.WriteLine();
             }
-
         }
 
         //Factory for specific executer

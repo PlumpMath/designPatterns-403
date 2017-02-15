@@ -7,7 +7,7 @@ namespace DesignPatterns.Patterns.PatternsType
 {
     public class Creational : PatternsTypeBase
     {
-        private const string ASSEMBLY_NAME = "DesignPatterns.Creational.PatternsExecutors";
+        private const string ASSEMBLY_NAME = "DesignPatterns.Patterns.PatternExecutor.Creational";
 
         protected override void DrawList()
         {

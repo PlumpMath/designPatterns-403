@@ -8,7 +8,7 @@ namespace DesignPatterns.Patterns.PatternsType
 {
     public class Structural : PatternsTypeBase
     {
-        private const string ASSEMBLY_NAME = "DesignPatterns.Structural.PatternsExecutor";
+        private const string ASSEMBLY_NAME = "DesignPatterns.Patterns.PatternExecutor.Structural";
 
         protected override void DrawList()
         {

@@ -9,7 +9,7 @@ namespace DesignPatterns
     class Program
     {
         static IDictionary<int, string> Menu { get; set; }
-        const string ASSEMBLY_NAME = "DesignPatterns.PatternsType";
+        const string ASSEMBLY_NAME = "DesignPatterns.Patterns.PatternsType";
 
         static void Main(string[] args)
         {

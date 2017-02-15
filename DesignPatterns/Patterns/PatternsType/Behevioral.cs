@@ -7,7 +7,7 @@ namespace DesignPatterns.Patterns.PatternsType
 {
     public class Behevioral : PatternsTypeBase
     {
-        private const string ASSEMBLY_NAME = "DesignPatterns.Behavioral.PatternsExecutor";
+        private const string ASSEMBLY_NAME = "DesignPatterns.Patterns.PatternExecutor.Behavioral";
 
         protected override void DrawList()
         {
