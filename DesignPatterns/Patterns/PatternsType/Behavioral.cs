@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace DesignPatterns.Patterns.PatternsType
 {
-    public class Behevioral : PatternsTypeBase
+    public class Behavioral : PatternsTypeBase
     {
         private const string ASSEMBLY_NAME = "DesignPatterns.Patterns.PatternExecutor.Behavioral";
 

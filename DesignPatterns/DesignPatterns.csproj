@@ -50,7 +50,11 @@
     <Compile Include="Behavioral\Command\IReciever.cs" />
     <Compile Include="Behavioral\Command\Multiply.cs" />
     <Compile Include="Behavioral\Command\SubstractCommand.cs" />
-    <Compile Include="Patterns\PatternExecutor\Behevioral\Command.cs" />
+    <Compile Include="Behavioral\Observer\ConcreteProduct.cs" />
+    <Compile Include="Behavioral\Observer\IObserver.cs" />
+    <Compile Include="Behavioral\Observer\Shop.cs" />
+    <Compile Include="Behavioral\Observer\SubjectBase.cs" />
+    <Compile Include="Patterns\PatternExecutor\Behavioral\Command.cs" />
     <Compile Include="Creational\AbstractFactory\AfricaFactory.cs" />
     <Compile Include="Creational\AbstractFactory\AmericaFactory.cs" />
     <Compile Include="Creational\AbstractFactory\AnimalWorld.cs" />
@@ -70,6 +74,7 @@
     <Compile Include="Creational\FactoryMethod\Resume.cs" />
     <Compile Include="Creational\FactoryMethod\SkillPage.cs" />
     <Compile Include="Creational\FactoryMethod\SummaryPage.cs" />
+    <Compile Include="Patterns\PatternExecutor\Behavioral\Observer.cs" />
     <Compile Include="Patterns\PatternExecutor\Creational\AbstractFactory.cs" />
     <Compile Include="Patterns\PatternExecutor\Creational\Builder.cs" />
     <Compile Include="Creational\Builder\CarBuilder.cs" />
@@ -88,7 +93,7 @@
     <Compile Include="Common\Helpers\MenuBuilder.cs" />
     <Compile Include="Common\Base\IPatternExecutor.cs" />
     <Compile Include="Common\Helpers\PatternSelector.cs" />
-    <Compile Include="Patterns\PatternsType\Behevioral.cs" />
+    <Compile Include="Patterns\PatternsType\Behavioral.cs" />
     <Compile Include="Patterns\PatternsType\Creational.cs" />
     <Compile Include="Patterns\PatternsType\Others.cs" />
     <Compile Include="Common\Base\PatternsTypeBase.cs" />
