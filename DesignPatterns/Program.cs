@@ -1,8 +1,10 @@
-﻿using DesignPatterns.Common.Base;
+﻿using Castle.MicroKernel.Registration;
+using Castle.Windsor;
+using DesignPatterns.Common.Base;
 using DesignPatterns.Common.Helpers;
 using System;
 using System.Collections.Generic;
-
+using Castle.MicroKernel.SubSystems.Configuration;
 
 namespace DesignPatterns
 {
@@ -57,9 +59,11 @@ namespace DesignPatterns
         static void SelectPattern(int number)
         {
             if(Menu.Count >= number)
-            {
+            {               
                 string className = Menu[number];
-                PatternSelector patternSelector = new PatternSelector(className, ASSEMBLY_NAME);
+                var container = new WindsorContainer();
+                container.Register(Component.For<PatternSelector>().Instance(new PatternSelector(className, ASSEMBLY_NAME)));
+                var patternSelector = container.Resolve<PatternSelector>();
                 patternSelector.SelectPatterns();
             }
         }
