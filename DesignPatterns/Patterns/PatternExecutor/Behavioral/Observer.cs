@@ -15,6 +15,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Behavioral
             return string.Format("Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. ");
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             ConcreteProduct product = new ConcreteProduct();

@@ -82,6 +82,7 @@
     <Compile Include="Creational\FactoryMethod\Resume.cs" />
     <Compile Include="Creational\FactoryMethod\SkillPage.cs" />
     <Compile Include="Creational\FactoryMethod\SummaryPage.cs" />
+    <Compile Include="Patterns\PatternExecutor\Behavioral\Interpreter.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Observer.cs" />
     <Compile Include="Patterns\PatternExecutor\Creational\AbstractFactory.cs" />
     <Compile Include="Patterns\PatternExecutor\Creational\Builder.cs" />

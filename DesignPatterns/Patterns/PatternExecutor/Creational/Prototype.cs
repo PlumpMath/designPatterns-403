@@ -11,6 +11,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Creational
             return string.Format("PROTOTYPE PATTERN{0}Specify the kind of objects to create using a prototypical {0}instance, and create new objects by copying this prototype.{0}", Environment.NewLine);
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             ColorManager colorManager = new ColorManager();

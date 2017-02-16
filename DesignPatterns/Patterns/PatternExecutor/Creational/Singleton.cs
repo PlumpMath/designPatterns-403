@@ -11,6 +11,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Creational
             return string.Format("Ensure a class has only one instance and provide a global point of access to it. ");
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             LoadBalancer l1 = LoadBalancer.GetLoadBalancer();

@@ -11,6 +11,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Structural
             return string.Format("Attach additional responsibilities to an object dynamically.{0}Decorators provide a flexible alternative to {0}subclassing for extending functionality.", Environment.NewLine);
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             Message("Tworzymy obiekt Book który dziedziczy po abstrakcji LibraryItemBase");     

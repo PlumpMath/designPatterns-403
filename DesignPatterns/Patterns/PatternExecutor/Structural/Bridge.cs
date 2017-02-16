@@ -11,6 +11,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Structural
             return string.Format("Decouple an abstraction from its implementation {0}so that the two can vary independently. ", Environment.NewLine);
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             MySuperSmartTV tv = new MySuperSmartTV();

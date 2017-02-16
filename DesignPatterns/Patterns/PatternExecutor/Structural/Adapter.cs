@@ -12,6 +12,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Structural
                 "Adapter lets classes work together that couldn't otherwise {0}because of incompatible interfaces. ", Environment.NewLine);
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             Compound unknown = new Compound("Unknown");

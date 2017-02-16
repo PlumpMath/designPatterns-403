@@ -11,6 +11,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Creational
             return string.Format("Provide an interface for creating families of related {0}or dependent objects without specifying their concrete classes. ", Environment.NewLine);
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             ContinentFactory afrika = new AfricaFactory();

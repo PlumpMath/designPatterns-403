@@ -11,6 +11,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Creational
             return string.Format("Define an interface for creating an object,  {0}but let subclasses decide which class to instantiate. {0}Factory Method lets a class defer instantiation to subclasses. ", Environment.NewLine);
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             Document[] documents = new Document[2];

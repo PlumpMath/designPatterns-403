@@ -11,6 +11,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Creational
             return string.Format("Separate the construction of a complex object {0}from its representation so that the same construction process {0}can create different representations. ", Environment.NewLine);
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             VehicleBuilderBase builder;

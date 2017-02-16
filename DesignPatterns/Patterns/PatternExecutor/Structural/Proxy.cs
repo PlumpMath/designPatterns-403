@@ -11,6 +11,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Structural
             return string.Format("Provide a surrogate or placeholder for another object to control access to it. ");
         }
 
+        public string DescriptionPL()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Execute()
         {
             MathProxy proxy = new MathProxy();

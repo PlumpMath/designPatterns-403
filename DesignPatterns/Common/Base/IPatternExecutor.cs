@@ -10,5 +10,6 @@ namespace DesignPatterns.Common.Base
     {
         void Execute();
         string Description();
+        string DescriptionPL();
     }
 }

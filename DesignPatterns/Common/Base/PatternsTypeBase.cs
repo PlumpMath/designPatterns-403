@@ -55,6 +55,8 @@ namespace DesignPatterns.Common.Base
             if (pattern != null)
             {
                 Console.WriteLine(pattern.Description());
+                Console.WriteLine();
+                Console.WriteLine(pattern.DescriptionPL());
                 pattern.Execute();
                 Console.WriteLine();
             }
