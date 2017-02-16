@@ -58,6 +58,12 @@
     <Compile Include="Behavioral\Command\IReciever.cs" />
     <Compile Include="Behavioral\Command\Multiply.cs" />
     <Compile Include="Behavioral\Command\SubstractCommand.cs" />
+    <Compile Include="Behavioral\Interpreter\AddExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\IExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\MultiplyExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\NumberExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\SubtractExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\TokenReader.cs" />
     <Compile Include="Behavioral\Observer\ConcreteProduct.cs" />
     <Compile Include="Behavioral\Observer\IObserver.cs" />
     <Compile Include="Behavioral\Observer\Shop.cs" />

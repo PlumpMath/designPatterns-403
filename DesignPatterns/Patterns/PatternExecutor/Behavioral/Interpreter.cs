@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DesignPatterns.Common.Base;
+using DesignPatterns.Behavioral.Interpreter;
 
 namespace DesignPatterns.Patterns.PatternExecutor.Behavioral
 {
@@ -21,7 +19,11 @@ namespace DesignPatterns.Patterns.PatternExecutor.Behavioral
 
         public void Execute()
         {
-            throw new NotImplementedException();
+            string token = "+ * 10 2 * 5 3";
+            List<string> tokenList = new List<string>(token.Split(' '));
+
+            IExpression expression = new TokenReader().ReadToken(tokenList);
+            Console.WriteLine(expression.Interpret());
         }
     }
 }
