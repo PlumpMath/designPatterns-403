@@ -13,7 +13,7 @@ namespace DesignPatterns.Patterns.PatternExecutor.Creational
 
         public string DescriptionPL()
         {
-            throw new NotImplementedException();
+            return string.Empty;
         }
 
         public void Execute()

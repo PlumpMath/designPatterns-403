@@ -13,7 +13,7 @@ namespace DesignPatterns.Patterns.PatternExecutor.Structural
 
         public string DescriptionPL()
         {
-            throw new NotImplementedException();
+            return string.Empty;
         }
 
         public void Execute()

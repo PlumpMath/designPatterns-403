@@ -17,7 +17,7 @@ namespace DesignPatterns.Patterns.PatternExecutor.Behavioral
 
         public string DescriptionPL()
         {
-            throw new NotImplementedException();
+            return string.Empty;
         }
 
         public void Execute()
