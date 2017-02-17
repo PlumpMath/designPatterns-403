@@ -68,6 +68,11 @@
     <Compile Include="Behavioral\Observer\IObserver.cs" />
     <Compile Include="Behavioral\Observer\Shop.cs" />
     <Compile Include="Behavioral\Observer\SubjectBase.cs" />
+    <Compile Include="Behavioral\Strategy\MergeSort.cs" />
+    <Compile Include="Behavioral\Strategy\QuickSort.cs" />
+    <Compile Include="Behavioral\Strategy\ShellSort.cs" />
+    <Compile Include="Behavioral\Strategy\SortedList.cs" />
+    <Compile Include="Behavioral\Strategy\SortStrategy.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Command.cs" />
     <Compile Include="Creational\AbstractFactory\AfricaFactory.cs" />
     <Compile Include="Creational\AbstractFactory\AmericaFactory.cs" />
@@ -90,6 +95,7 @@
     <Compile Include="Creational\FactoryMethod\SummaryPage.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Interpreter.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Observer.cs" />
+    <Compile Include="Patterns\PatternExecutor\Behavioral\Strategy.cs" />
     <Compile Include="Patterns\PatternExecutor\Creational\AbstractFactory.cs" />
     <Compile Include="Patterns\PatternExecutor\Creational\Builder.cs" />
     <Compile Include="Creational\Builder\CarBuilder.cs" />
