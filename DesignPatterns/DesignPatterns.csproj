@@ -73,6 +73,9 @@
     <Compile Include="Behavioral\Strategy\ShellSort.cs" />
     <Compile Include="Behavioral\Strategy\SortedList.cs" />
     <Compile Include="Behavioral\Strategy\SortStrategy.cs" />
+    <Compile Include="Behavioral\Template Method\Categories.cs" />
+    <Compile Include="Behavioral\Template Method\DataAccessObject.cs" />
+    <Compile Include="Behavioral\Template Method\Product.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Command.cs" />
     <Compile Include="Creational\AbstractFactory\AfricaFactory.cs" />
     <Compile Include="Creational\AbstractFactory\AmericaFactory.cs" />
@@ -96,6 +99,7 @@
     <Compile Include="Patterns\PatternExecutor\Behavioral\Interpreter.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Observer.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Strategy.cs" />
+    <Compile Include="Patterns\PatternExecutor\Behavioral\Template Method.cs" />
     <Compile Include="Patterns\PatternExecutor\Creational\AbstractFactory.cs" />
     <Compile Include="Patterns\PatternExecutor\Creational\Builder.cs" />
     <Compile Include="Creational\Builder\CarBuilder.cs" />
