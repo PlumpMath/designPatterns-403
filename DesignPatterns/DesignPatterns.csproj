@@ -98,6 +98,7 @@
     <Compile Include="Creational\FactoryMethod\SummaryPage.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Interpreter.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Observer.cs" />
+    <Compile Include="Patterns\PatternExecutor\Behavioral\State.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Strategy.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Template Method.cs" />
     <Compile Include="Patterns\PatternExecutor\Creational\AbstractFactory.cs" />
@@ -159,6 +160,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Behavioral\State\" />
     <Folder Include="Structural\Composite\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
