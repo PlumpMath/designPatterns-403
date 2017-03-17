@@ -64,6 +64,10 @@
     <Compile Include="Behavioral\Interpreter\NumberExpression.cs" />
     <Compile Include="Behavioral\Interpreter\SubtractExpression.cs" />
     <Compile Include="Behavioral\Interpreter\TokenReader.cs" />
+    <Compile Include="Behavioral\Mediator\ConcreteColleague.cs" />
+    <Compile Include="Behavioral\Mediator\ConreteMediator.cs" />
+    <Compile Include="Behavioral\Mediator\IColleague.cs" />
+    <Compile Include="Behavioral\Mediator\IMediator.cs" />
     <Compile Include="Behavioral\Observer\ConcreteProduct.cs" />
     <Compile Include="Behavioral\Observer\IObserver.cs" />
     <Compile Include="Behavioral\Observer\Shop.cs" />
@@ -97,6 +101,7 @@
     <Compile Include="Creational\FactoryMethod\SkillPage.cs" />
     <Compile Include="Creational\FactoryMethod\SummaryPage.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Interpreter.cs" />
+    <Compile Include="Patterns\PatternExecutor\Behavioral\Mediator.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Observer.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\State.cs" />
     <Compile Include="Patterns\PatternExecutor\Behavioral\Strategy.cs" />
